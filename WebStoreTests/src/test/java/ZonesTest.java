@@ -34,12 +34,6 @@ public class ZonesTest {
         }
     }
 
-    void goToOrigin(){
-        WebElement block = driver.findElement(By.id("sidebar"));
-        block.findElement(By.tagName("a")).click();
-    }
-
-    //   @Test(priority = 0)
     public void loginAdmin(){
         driver.get("http://localhost/litecart/admin/login.php");
         driver.findElement(By.name("username")).sendKeys("admin");
@@ -118,21 +112,5 @@ public class ZonesTest {
                 break;
             }
         }
-        /*
-
-        int numberRows = rows.size()-1;
-        for (int i=2 ; i<numberRows; i++){
-            cellsRow = rows.get(i).findElements(By.tagName("td"));
-            cell = cellsRow.get(2).findElement(By.tagName("input"));
-            String zoneNext = cell.getAttribute("value");
-            if (zone.compareTo(zoneNext)<0){
-                zone = zoneNext;
-            }
-            else {
-                System.out.println("Zones not alphabetical" );
-                break;
-            }
-        }
-        */
     }
-    }
+}
