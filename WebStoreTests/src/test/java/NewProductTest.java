@@ -95,7 +95,7 @@ public class NewProductTest {
         dateFromLabel.sendKeys("01012019");
 
         WebElement imageLabel = generalFields.get(8).findElement(By.cssSelector("td > table > tbody > tr:nth-child(1) > td > input"));
-        imageLabel.sendKeys("C:\\Study\\Star.jpg");
+        imageLabel.sendKeys("https://github.com/Buchfink/test-selenium/blob/master/Star.jpg");
         //*[@id="tab-general"]/table/tbody/tr[9]/td/table/tbody/tr[1]/td/input
        // #tab-general > table > tbody > tr:nth-child(9) > td > table > tbody > tr:nth-child(1) > td > input[type="file"]
 
